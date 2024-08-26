@@ -67,7 +67,9 @@ nav ul li a.get-started {
   font-size: 1.2em;
   margin: 0 0 30px;
 }
-
+.desc-tel {
+  display: flex;
+}
 .hero-content .learn-more {
   display: inline-block;
   padding: 10px 20px;
@@ -466,7 +468,9 @@ footer {
 .navbar-toggler {
   padding: 0;
 }
-
+.mob-tel {
+  display: none;
+}
 .navbar-toggler .toggler-icon {
   width: 30px;
   height: 2px;
@@ -538,6 +542,13 @@ footer {
   .about-image, .delivery-image {
     width: 100%;
     margin-right: 0px;
+  }
+  .mob-tel {
+    display: flex;
+    margin: 15px;
+  }
+  .desc-tel {
+    display: none;
   }
   .h-135 {
     height: auto;
