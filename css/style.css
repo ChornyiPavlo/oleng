@@ -8,9 +8,11 @@ header {
   padding: 20px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 .logo a {
   color: #6c63ff;
 }
+
 nav ul {
   display: flex;
   justify-content: flex-end;
@@ -49,7 +51,7 @@ nav ul li a.get-started {
   flex: 1 1 100%;
   background-color: #9b59b6;
   color: white;
-  padding: 50px;
+  padding: 36px;
   border-radius: 10px;
   text-align: left;
   margin-bottom: 20px;
@@ -67,9 +69,11 @@ nav ul li a.get-started {
   font-size: 1.2em;
   margin: 0 0 30px;
 }
+
 .desc-tel {
   display: flex;
 }
+
 .hero-content .learn-more {
   display: inline-block;
   padding: 10px 20px;
@@ -116,7 +120,6 @@ nav ul li a.get-started {
     font-size: 1.5em;
   }
 }
-
 
 
 .step-block {
@@ -174,46 +177,91 @@ nav ul li a.get-started {
   display: inline-block;
 }
 
+.animated-button {
+  width: 280px;
+  height: 80px;
+  background-color: #31a09d;
+  color: #fff;
+  font-size: 24px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  outline: none;
+  text-transform: uppercase;
+  animation: colorChange 3s infinite alternate;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid;
+}
+
+@keyframes colorChange {
+  0% {
+    background-color: #e32b17;
+  }
+  100% {
+    background-color: #28f225;
+  }
+}
+
+.animated-button:hover {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+.mob {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .step-block {
     flex-direction: column;
     text-align: center;
   }
-
+.mob {
+  display: block;
+}
+  .desc {
+    display: none!important;
+  }
   .step-content {
     padding-left: 0;
     padding-top: 20px;
   }
-.policy h1 {
-  font-size: 1.5em;
-}
+
+  .policy h1 {
+    font-size: 1.5em;
+  }
+
   .policy h2 {
     font-size: 1.2em;
   }
+
   .step-number {
     position: relative;
     left: 0;
     top: 0;
   }
+
   nav ul li a {
     font-size: 14px;
   }
+
   .hero-content h1 {
     font-size: 1.5em;
   }
+
   .hero {
     padding: 10px;
   }
+
   .hero-content p {
     font-size: 0.8em;
   }
+
   .step-content {
     margin-bottom: 10px;
   }
 }
-
-
-
 
 
 .pricing-plans {
@@ -311,12 +359,11 @@ nav ul li a.get-started {
     max-width: 90%;
     margin-bottom: 20px;
   }
+
   .head {
     flex-direction: column;
   }
 }
-
-
 
 
 footer {
@@ -468,9 +515,11 @@ footer {
 .navbar-toggler {
   padding: 0;
 }
+
 .mob-tel {
   display: none;
 }
+
 .navbar-toggler .toggler-icon {
   width: 30px;
   height: 2px;
@@ -536,23 +585,29 @@ footer {
     box-shadow: 0px 15px 20px 0px rgba(34, 34, 34, 0.1);
     padding: 5px 12px;
   }
+
   .about-text, .delivery-text {
     width: 100%;
   }
+
   .about-image, .delivery-image {
     width: 100%;
     margin-right: 0px;
   }
+
   .mob-tel {
     display: flex;
     margin: 15px;
   }
+
   .desc-tel {
     display: none;
   }
+
   .h-135 {
     height: auto;
   }
+
   .menu ul li {
     margin: 10px 15px;
   }
@@ -789,6 +844,7 @@ nav ul li:hover a {
     opacity: 1;
     visibility: visible;
   }
+
   .container1 {
     flex-direction: column;
   }
