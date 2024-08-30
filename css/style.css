@@ -218,7 +218,7 @@ nav ul li a.get-started {
     text-align: center;
   }
 .mob {
-  display: block;
+  display: flex;
 }
   .desc {
     display: none!important;
